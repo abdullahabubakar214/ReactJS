@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       <Route loader={githubInfoLoader} path="github" element={<Github />} />
     </Route>
   )
-);
+); 
 
 
 createRoot(document.getElementById('root')).render(
