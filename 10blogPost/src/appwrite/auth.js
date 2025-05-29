@@ -39,11 +39,11 @@ export class AuthService {
     }
   }
 
-  async getUserAccount() {
+  async getCurrentUser() {
     try {
       return await this.account.get();
     } catch (error) {
-      console.log("Error :: getUserAccount", error);
+      console.log("Error :: getCurrentUser", error);
     }
     return null;
   }
